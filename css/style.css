@@ -1,0 +1,79 @@
+
+i{
+    cursor: pointer;
+}
+
+
+
+.meal{
+    /* top:100%; */
+    cursor: pointer;
+
+    transition: 0.7s;
+}
+.nav-tab .links li, #logo{ 
+    cursor: pointer;
+}
+.links li{
+    top:300%
+}
+.ingredientsMeals{
+    cursor: pointer;
+}
+
+.meal-layer{
+    width: 100%;
+    height: 100%;
+    top: 150%;
+    transition: 0.7s;
+    background-color: rgba(255, 255, 255, 0.653);
+}
+.meal:hover .meal-layer{
+    top: 0% !important;
+}
+
+.row input::placeholder{
+    color: antiquewhite;
+    font-style: italic;
+}
+
+.fa-drumstick-bite{
+    font-size: 4em;
+}
+
+
+.loader {
+    transform: translateZ(1px);
+  }
+  .loader:after {
+    content: url('../images/logo.png');
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    text-align: center;
+    line-height:40px;
+    font-size: 32px;
+    font-weight: bold;
+
+    
+    box-sizing: border-box;
+    
+    animation: coin-flip 4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  @keyframes coin-flip {
+    0%, 100% {
+      animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    }
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(1800deg);
+      animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    }
+    100% {
+      transform: rotateY(3600deg);
+    }
+  }
+        
